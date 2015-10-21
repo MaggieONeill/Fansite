@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                tools:context="com.example.guest.fansite.ui.MemberBiosActivity"
+                android:background="#C6B192">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/colin_meloy"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ColinMeloy"
+        android:id="@+id/bandMemberName"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="32dp"
+        android:typeface="serif"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollBandMemberBio"
+        android:layout_below="@+id/bandMemberName"
+        android:layout_above="@+id/nextBandMemberButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meloy was born in Helena, Montana.[1][2] He attended the University of Oregon in Eugene for two years, studying English and theatre, before returning to Montana and enrolling in the creative writing program at the University of Montana in Missoula, where he graduated in 1998."
+            android:id="@+id/bandMemberBioInfo"
+            android:textSize="26sp"/>
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Band Member"
+        android:id="@+id/nextBandMemberButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/bandMemberName"
+        android:layout_alignEnd="@+id/bandMemberName"
+        android:layout_alignLeft="@+id/bandMemberName"
+        android:layout_alignStart="@+id/bandMemberName"/>
+</RelativeLayout>

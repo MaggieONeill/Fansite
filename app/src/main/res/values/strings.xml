@@ -3,4 +3,9 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_tour_dates">TourDates</string>
+    <string name="title_activity_member_bios">MemberBios</string>
+    <string name="title_activity_discography">Discography</string>
+    <string name="ColinMeloy">Colin Meloy</string>
+    <string name="BandMemberInfo">Meloy was born in Helena, Montana. He attended the University of Oregon in Eugene for two years, studying English and theatre, before returning to Montana and enrolling in the creative writing program at the University of Montana in Missoula, where he graduated in 1998. </string>
 </resources>

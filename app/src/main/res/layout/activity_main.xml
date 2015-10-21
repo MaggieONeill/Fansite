@@ -2,10 +2,51 @@
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                tools:context=".MainActivity">
+
+                tools:context=".MainActivity"
+                android:background="#C6B192">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tour Dates"
+        android:id="@+id/tourDatesButton"
+        android:backgroundTint="#949C4F"
+        android:layout_above="@+id/memberBiosButton"
+        android:layout_centerHorizontal="true"
+        android:textColor="#d5d2bf"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Member Bios"
+        android:id="@+id/memberBiosButton"
+        android:backgroundTint="#f1e38b"
+        android:layout_above="@+id/discographyButton"
+        android:layout_alignLeft="@+id/tourDatesButton"
+        android:layout_alignStart="@+id/tourDatesButton"
+        android:elegantTextHeight="false"
+        android:textColor="#d5d2bf"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Discography"
+        android:id="@+id/discographyButton"
+        android:backgroundTint="#543018"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/memberBiosButton"
+        android:layout_alignStart="@+id/memberBiosButton"
+        android:textColor="#d5d2bf"/>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/band"
+        android:layout_above="@+id/tourDatesButton"
+        android:layout_alignLeft="@+id/tourDatesButton"
+        android:layout_alignStart="@+id/tourDatesButton"
+        android:cropToPadding="false"/>
 
 </RelativeLayout>

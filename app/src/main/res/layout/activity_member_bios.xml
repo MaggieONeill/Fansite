@@ -52,5 +52,7 @@
         android:layout_alignRight="@+id/bandMemberName"
         android:layout_alignEnd="@+id/bandMemberName"
         android:layout_alignLeft="@+id/bandMemberName"
-        android:layout_alignStart="@+id/bandMemberName"/>
+        android:layout_alignStart="@+id/bandMemberName"
+        android:background="#543018"
+        android:textColor="#d5d2bf"/>
 </RelativeLayout>

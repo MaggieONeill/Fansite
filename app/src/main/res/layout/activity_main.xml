@@ -43,7 +43,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/imageView"
-        android:src="@drawable/band"
+        android:src="@drawable/main"
         android:layout_above="@+id/tourDatesButton"
         android:layout_alignLeft="@+id/tourDatesButton"
         android:layout_alignStart="@+id/tourDatesButton"

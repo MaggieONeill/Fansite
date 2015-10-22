@@ -5,11 +5,13 @@ package com.example.guest.fansite.models;
  */
 public class BandMember {
     private String mName;
+    private String mBandRole;
     private String mDescription;
     private int mImage;
 
-    public BandMember(String name, String description, int image){
+    public BandMember(String name, String bandRole, String description, int image){
         mName = name;
+        mBandRole = bandRole;
         mDescription = description;
         mImage = image;
     }
@@ -20,6 +22,14 @@ public class BandMember {
 
     public void setName(String name) {
         mName = name;
+    }
+
+    public String getBandRole() {
+        return mBandRole;
+    }
+
+    public void setBandRole(String bandRole) {
+        mBandRole = bandRole;
     }
 
     public String getDescription() {

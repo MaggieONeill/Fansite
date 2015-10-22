@@ -10,7 +10,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView2"
+        android:id="@+id/bandMemberImage"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:src="@drawable/colin_meloy"/>
@@ -35,12 +35,6 @@
         android:layout_marginTop="6dp"
         android:layout_marginLeft="6dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Meloy was born in Helena, Montana.[1][2] He attended the University of Oregon in Eugene for two years, studying English and theatre, before returning to Montana and enrolling in the creative writing program at the University of Montana in Missoula, where he graduated in 1998."
-            android:id="@+id/bandMemberBioInfo"
-            android:textSize="26sp"/>
     </ScrollView>
 
     <Button
@@ -55,4 +49,27 @@
         android:layout_alignStart="@+id/bandMemberName"
         android:background="#543018"
         android:textColor="#d5d2bf"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meloy was born in Helena, Montana.[1][2] He attended the University of Oregon in Eugene for two years, studying English and theatre, before returning to Montana and enrolling in the creative writing program at the University of Montana in Missoula, where he graduated in 1998."
+        android:id="@+id/bandMemberBioInfo"
+        android:textSize="16sp"
+        android:layout_above="@+id/nextBandMemberButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="38dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Front man"
+        android:id="@+id/bandRole"
+        android:layout_centerHorizontal="true"
+        android:textSize="32sp"
+        android:layout_alignTop="@+id/scrollBandMemberBio"
+        android:layout_above="@+id/bandMemberBioInfo"
+        android:textStyle="italic"/>
+
 </RelativeLayout>

@@ -4,36 +4,40 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.guest.fansite.R;
+import com.example.guest.fansite.models.BandMember;
+import com.example.guest.fansite.models.BandMemberlib;
+
+import org.w3c.dom.Text;
 
 public class MemberBiosActivity extends AppCompatActivity {
+
+    private TextView mBandMemberName;
+    private TextView mBandRole;
+    private TextView mBandMemberBioInfo;
+    private ImageView mBandMemberImage;
+    private Button mNextBandMemberButton;
+
+    private BandMemberlib mBandMemberlib;
+    private BandMember mCurrentBandMember;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_member_bios);
+
+        mBandMemberName = (TextView) findViewById(R.id.bandMemberName);
+        mBandRole = (TextView) findViewById(R.id.bandRole);
+        mBandMemberBioInfo = (TextView) findViewById(R.id.bandMemberBioInfo);
+        mBandMemberImage = (ImageView) findViewById(R.id.bandMemberImage);
+        mNextBandMemberButton = (Button) findViewById(R.id.nextBandMemberButton);
+        mBandMemberlib = new BandMemberlib();
+        mCurrentBandMember = mBandMemberlib.getBandMembers().get(0);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_member_bios, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 }

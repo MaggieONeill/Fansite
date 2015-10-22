@@ -6,13 +6,13 @@ package com.example.guest.fansite.models;
 public class BandMember {
     private String mName;
     private String mBandRole;
-    private String mDescription;
+    private String mBandMemberBioInfo;
     private int mImage;
 
-    public BandMember(String name, String bandRole, String description, int image){
+    public BandMember(String name, String bandRole, String bandMemberBioInfo, int image){
         mName = name;
         mBandRole = bandRole;
-        mDescription = description;
+        mBandMemberBioInfo = bandMemberBioInfo;
         mImage = image;
     }
 
@@ -32,12 +32,12 @@ public class BandMember {
         mBandRole = bandRole;
     }
 
-    public String getDescription() {
-        return mDescription;
+    public String getBandMemberBioInfo() {
+        return mBandMemberBioInfo;
     }
 
-    public void setDescription(String description) {
-        mDescription = description;
+    public void setBandMemberBioInfo(String bandMemberBioInfo) {
+        mBandMemberBioInfo = bandMemberBioInfo;
     }
 
     public int getImage() {
@@ -47,4 +47,5 @@ public class BandMember {
     public void setImage(int image) {
         mImage = image;
     }
+
 }

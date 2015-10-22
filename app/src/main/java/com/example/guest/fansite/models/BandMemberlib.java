@@ -73,4 +73,13 @@ public class BandMemberlib {
 
 
     }
+
+    public BandMember nextBandMember(BandMember currentBandMember) {
+        int index = mBandMembers.indexOf(currentBandMember);
+        if(index == mBandMembers.size() - 1) {
+            return mBandMembers.get(0);
+        }else {
+            return mBandMembers.get(index+1);
+        }
+    }
 }

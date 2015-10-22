@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -37,6 +38,24 @@ public class MemberBiosActivity extends AppCompatActivity {
         mNextBandMemberButton = (Button) findViewById(R.id.nextBandMemberButton);
         mBandMemberlib = new BandMemberlib();
         mCurrentBandMember = mBandMemberlib.getBandMembers().get(0);
+
+
+        setLayoutContent();
+
+        mNextBandMemberButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mCurrentBandMember = mBandMemberlib.nextBandMember(mCurrentBandMember);
+                setLayoutContent();
+        }
+        });
+    }
+
+    private void setLayoutContent() {
+        mBandMemberName.setText(mCurrentBandMember.getName());
+        mBandRole.setText(mCurrentBandMember.getBandRole());
+        mBandMemberBioInfo.setText(mCurrentBandMember.getBandMemberBioInfo());
+        mBandMemberImage.setImageResource(mCurrentBandMember.getImage());
     }
 
 
